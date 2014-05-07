@@ -10,3 +10,14 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Intellij IDEA Files
+*.iml
+.idea
+
+# Eclipse Settings Files
+.classpath
+.settings
+
+# Maven Build directory
+target
