@@ -3,7 +3,7 @@ GateIn RESTful resource
 
 An archetype for and easy/quick way to have a rest based resource container for the GateIn portal.
 
-##### How to install
+### How to install
 ###### Clone the git project
 * _~ git clone git@github.com:tmarwen/wise-archetypes.git_
 * Then move to the project directory
