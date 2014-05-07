@@ -4,7 +4,7 @@
 
   <groupId>org.wisebrains.archetypes</groupId>
   <artifactId>gatein-rest-resource-archetype</artifactId>
-  <version>1.0</version>
+  <version>${parent.version}</version>
   <packaging>maven-archetype</packaging>
 
   <name>gatein-rest-resource-archetype</name>
