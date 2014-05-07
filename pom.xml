@@ -7,7 +7,7 @@
     <groupId>org.wisebrains.archetypes</groupId>
     <artifactId>wise-archetypes-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.x</version>
 
     <modules>
         <module>gatein-rest-resource-archetype</module>
