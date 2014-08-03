@@ -2,15 +2,90 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.wisebrains.archetypes</groupId>
-    <artifactId>wise-archetypes-parent</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0</version>
+  <groupId>org.wisebrains.archetypes</groupId>
+  <artifactId>wise-archetypes-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.x-SNAPSHOT</version>
 
-    <modules>
-        <module>gatein-rest-resource-archetype</module>
-    </modules>
+  <name>A Collection of Utilities Archetypes</name>
+
+  <description>
+    A collection of archetypes aiming to facilitate basically
+    some GateIn Portal components creation.
+  </description>
+
+  <url>https://github.com/wisebrains/wise-archetypes</url>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>tmarwen</id>
+      <name>Marwen Trabelsi</name>
+      <email>marwen.trabelsi.insat@gmail.com</email>
+      <url>http://www.wisebrains.com/</url>
+      <organization>Wise Software</organization>
+      <organizationUrl>http://www.wisebrains.com/</organizationUrl>
+      <roles>
+        <role>developer</role>
+        <role>support</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:ssh://github.com/wisebrains/wise-archetypes</connection>
+    <developerConnection>scm:git:ssh://git@github.com/wisebrains/wise-archetypes</developerConnection>
+    <url>https://github.com/wisebrains/wise-archetypes</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Temporary Filesystem Staging Repository</name>
+      <url>file://${project.build.directory}/mvn-repo</url>
+    </repository>
+    <site>
+      <id>wise.home</id>
+      <name>WiseBrains Home Page</name>
+      <url>scp://www.wisebrains.org/</url>
+    </site>
+  </distributionManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5</version>
+          <configuration>
+            <tagNameFormat>v@{project.version}</tagNameFormat>
+            <preparationGoals>clean verify</preparationGoals>
+            <goals>deploy</goals>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <modules>
+    <module>gatein-rest-resource-archetype</module>
+  </modules>
 
 </project>
