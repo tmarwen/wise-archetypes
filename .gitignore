@@ -21,3 +21,6 @@ hs_err_pid*
 
 # Maven Build directory
 target
+!*/target/
+*/target/classes
+*/target/test-classes
