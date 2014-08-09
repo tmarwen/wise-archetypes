@@ -3,17 +3,18 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.wisebrains.archetypes</groupId>
+    <groupId>com.github.wisebrains.archetypes</groupId>
     <artifactId>wise-archetypes-parent</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.wisebrains.archetypes</groupId>
   <artifactId>gatein-rest-resource-archetype</artifactId>
   <packaging>maven-archetype</packaging>
 
-  <name>GateIn Rest Resource Container Archetype</name>
-  <description>A Maven archetype to generate sample Restful GateIn resource</description>
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>
+    A Maven archetype to generate sample Restful GateIn resource
+  </description>
 
   <build>
     <extensions>
