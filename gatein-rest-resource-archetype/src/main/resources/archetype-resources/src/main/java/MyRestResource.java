@@ -10,14 +10,22 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
 /**
- * Created by eXo Platform MEA on 06/05/14.
+ * Created by WiseBrains on 06/05/14.
  *
- * @author <a href="mailto:mtrabelsi@exoplatform.com">Marwen Trabelsi</a>
+ * The <code>MyRestResource</code> class represents a RESTful GateIn
+ * resource container.
+ *
+ * @author <a href="mailto:marwen.trabelsi.insat@gmail.com">Marwen Trabelsi</a>
  */
 
 @Path("/my-resource")
 public class MyRestResource implements ResourceContainer {
 
+  /**
+   * A GET style method that returns a {@code String} object that
+   * formed of <pre>Hello </pre> along with a <pre>word</pre> forwarded
+   * to the the method endpoint URL as a {@code PathParam}.
+   */
   @GET
   @Path("/get/{name}")
   public String get(@PathParam("word") String word) {
