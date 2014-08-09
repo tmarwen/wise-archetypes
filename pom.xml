@@ -5,7 +5,7 @@
   <groupId>com.github.wisebrains.archetypes</groupId>
   <artifactId>wise-archetypes-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
 
   <name>${project.groupId}:${project.artifactId}</name>
 
@@ -43,7 +43,7 @@
     <connection>scm:git:ssh://github.com/wisebrains/wise-archetypes</connection>
     <developerConnection>scm:git:ssh://git@github.com/wisebrains/wise-archetypes</developerConnection>
     <url>https://github.com/wisebrains/wise-archetypes</url>
-    <tag>v1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
