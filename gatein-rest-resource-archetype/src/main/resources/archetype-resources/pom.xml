@@ -16,6 +16,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+    <javax.ws.rs.version>${javaxWsRsVersion}</javax.ws.rs.version>
+    <exo.ws.rest.core.version>${exoWsRestCoreVersion}</exo.ws.rest.core.version>
     <jarBuildPath>${project.build.directory}</jarBuildPath>
   </properties>
 
@@ -23,13 +25,13 @@
     <dependency>
       <groupId>javax.ws.rs</groupId>
       <artifactId>jsr311-api</artifactId>
-      <version>1.0</version>
+      <version>${javax.ws.rs.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.ws</groupId>
       <artifactId>exo.ws.rest.core</artifactId>
-      <version>2.3.7-GA</version>
+      <version>${exo.ws.rest.core.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
