@@ -6,10 +6,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <requiredProperties>
     <requiredProperty key="javaxWsRsVersion">
-      <defaultValue>1.0</defaultValue>
+      <defaultValue>1.1.1</defaultValue>
     </requiredProperty>
     <requiredProperty key="exoWsRestCoreVersion">
-      <defaultValue>2.3.7-GA</defaultValue>
+      <defaultValue>2.4.1-GA</defaultValue>
     </requiredProperty>
   </requiredProperties>
   <fileSets>
